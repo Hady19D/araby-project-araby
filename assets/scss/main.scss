@@ -1,0 +1,60 @@
+@font-face {
+  font-family: jazeera-regular;
+  src: url('@/assets/fonts/al-jazeera-arabic-regular.TTF') format('opentype');
+}
+
+@font-face {
+  font-family: poppins-medium;
+  src: url('@/assets/fonts/Poppins-Medium.ttf') format('opentype');
+}
+
+body {
+  background-image: url('@/assets/images/main-background-pattern.webp');
+  background-position: center;
+}
+
+.ltr-direction {
+  direction: ltr;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label {
+  @apply top-0;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar-track {
+    @apply w-1 bg-transparent;
+  }
+
+  &::-webkit-scrollbar {
+    @apply w-1 bg-transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

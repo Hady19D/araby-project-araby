@@ -1,0 +1,8 @@
+node_modules
+.nuxt
+coverage
+lib/templates
+.idea
+*.css
+*.bat
+.output
